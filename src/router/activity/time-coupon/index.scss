@@ -1,0 +1,20 @@
+.time-coupon{
+  text-align: left;
+
+  &-item{
+    width: auto;
+    margin: 10px 0 0 10%;
+    text-align: left;
+
+    &-title{
+      margin-right: 50px;
+      width: 200px;
+    }
+    .ant-input-number{
+      width: 40%;
+    }
+  }
+  .ant-card{
+    margin-top: 20px;
+  }
+}
