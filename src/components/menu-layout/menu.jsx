@@ -1,8 +1,8 @@
 export const menus = [
-  // {
-  //   path: '/login',
-  //   name: '登录'
-  // },
+  {
+    path: '/login',
+    name: '首页'
+  },
   {
 
     name: '活动',

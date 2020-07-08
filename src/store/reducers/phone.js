@@ -19,9 +19,8 @@ export default function phone (state = MY_PHONE, action) {
   }
 }
 
-// 包含所有的action creator
 // reduce的全部规则
-//State 是只读的，唯一修改它的方式是 actions。
+// State 是只读的，唯一修改它的方式是 actions。
 // 更新的唯一方式：dispatch(action) -> reducer -> new state。
 // Reducer 函数必须是“纯”的 —— 不能修改它的参数，也不能有副作用（side effect）
 
