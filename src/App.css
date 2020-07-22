@@ -20,6 +20,12 @@
 /*.ant-anchor-wrapper{*/
 /*  overflow: unset;*/
 /*}*/
+.ant-btn{
+  border-radius: 50px;
+}
 .backgroundLayer__36t43{
   opacity: 0.7!important;
 }
+
+
+

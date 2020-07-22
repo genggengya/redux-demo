@@ -22,7 +22,7 @@ function addNameCreater (state, action) {
 }
 
 function addAgeCreater (state, action) {
-  console.log(state, action)
+  // console.log(state, action)
   return state + 1
 }
 

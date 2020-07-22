@@ -22,7 +22,7 @@ class MenuLayout extends React.Component {
     super(props)
     this.state = {
       menus,
-      collapsed: false,
+      collapsed: true,
       selectedKeys: [],
       pageHeads: [],
       openKeys: [],
@@ -189,7 +189,6 @@ class MenuLayout extends React.Component {
 
   // 渲染子路由
   renderChildrenMenu = (menus, parentIndex) => {
-    console.log(menus)
     return (
        menus.children &&
          menus.children.map((item, childIndex) => {

@@ -4,7 +4,6 @@ export const menus = [
     name: '首页'
   },
   {
-
     name: '活动',
     children: [
       {
@@ -16,5 +15,13 @@ export const menus = [
         name: 'H5活动'
       }
     ]
-  }
+  },
+  {
+    path: '/ToDoList/list',
+    name: 'toDoList'
+  },
+  {
+    path: '/snow',
+    name: '大雪花'
+  },
 ]

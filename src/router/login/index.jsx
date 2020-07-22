@@ -1,9 +1,8 @@
-
 import React from 'react'
 import Echarts from '@/components/echarts'
+
 class Login extends React.Component{
   componentDidMount() {
-
   }
   render() {
     return (

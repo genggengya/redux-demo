@@ -2,6 +2,7 @@ import React from 'react';
 import { HashRouter as Router, Route, Switch, Redirect } from 'react-router-dom'
 import { router } from './router/router'
 import MenuLayout  from './components/menu-layout/index'
+import NotFound from '@/router/404'
 
 import 'echarts/lib/chart/bar';
 import 'echarts/lib/chart/line';
@@ -40,7 +41,7 @@ class App extends React.Component {
                   <RouteWithSubRoutes exact key={ i } { ...route } />
                 ))
               }
-              {/*<Router component={}/>*/}
+              <Route  component={NotFound} />
             </Switch>
           </MenuLayout>
         </div>
