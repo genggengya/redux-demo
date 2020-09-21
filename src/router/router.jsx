@@ -3,6 +3,10 @@ import Activity from './activity/H5'
 import TimeCoupon from './activity/time-coupon'
 import ToDoList from './toDoList/list'
 import Snow from './snow'
+import Goods from './goods/list'
+import GoodsAdd from './goods/add'
+import HooksTest from './hooks'
+import Canvas from './canvas'
 
 export const router = [
   {
@@ -29,5 +33,25 @@ export const router = [
     path: '/snow',
     name: '雪',
     component: Snow
-  }
+  },
+  {
+    path: '/goods',
+    name: '商品',
+    component: Goods
+  },
+  {
+    path: '/goods/add',
+    name: '增加商品',
+    component: GoodsAdd
+  },
+  {
+    path: '/HooksTest',
+    name: '测试Hooks',
+    component: HooksTest
+  },
+  {
+    path: '/canvas',
+    name: 'canvas',
+    component: Canvas
+  },
 ]

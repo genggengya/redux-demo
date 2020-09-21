@@ -62,7 +62,7 @@ class Login extends React.Component{
                 })
               }
             }
-            style={{ width: 'auto' }}
+            style={{ width: '100px' }}
           />
           <Button type='primary' onClick={ this.addPhone }>添加手机号</Button>
           <Button type='danger' onClick={ () => restPhone() }>清空手机号</Button>

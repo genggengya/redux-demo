@@ -1,14 +1,11 @@
 import React from 'react'
 import { Layout, Menu, Breadcrumb, Button, Modal } from 'antd'
 import { withRouter } from 'react-router-dom'
-import { browserHistory } from 'react-router';
 import { SketchPicker } from 'react-color'
 import { SmileTwoTone, HeartTwoTone, CheckCircleTwoTone } from '@ant-design/icons'
 import { menus } from './menu'
-import {
-  LeftCircleTwoTone,
-  RightCircleTwoTone
-} from '@ant-design/icons';
+import Logo from './img/logo.gif'
+
 const { SubMenu } = Menu;
 const {
   Header,
@@ -22,7 +19,7 @@ class MenuLayout extends React.Component {
     super(props)
     this.state = {
       menus,
-      collapsed: true,
+      collapsed: false,
       selectedKeys: [],
       pageHeads: [],
       openKeys: [],
@@ -76,12 +73,18 @@ class MenuLayout extends React.Component {
         <Sider theme={color} collapsible collapsed={collapsed} onCollapse={this.toggleCollapsed}>
           <div
             className="logo"
-            style={{ height:  '100px', color: '#FFF', lineHeight: '100px', marginBottom: 10 }}
+            style={{
+              height: 70, width: 70, borderRadius: 50,
+              color: '#FFF',
+              // lineHeight: '100px',
+              margin: '10px auto',
+              background: 'linear-gradient(315deg,#fff 0,#cfeddc 100%'
+            }}
           >
             <img
-              style={{ height: !collapsed ? 100 : 50, width: !collapsed ? 150 : 50, borderRadius: 50}}
+              style={{ height: 70, width: 70, borderRadius: 50}}
               alt={'logo'}
-              src={'http://temp.im/640x260/fff/fff'}
+              src={Logo}
             />
           </div>
           <Menu

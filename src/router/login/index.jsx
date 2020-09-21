@@ -3,6 +3,20 @@ import Echarts from '@/components/echarts'
 
 class Login extends React.Component{
   componentDidMount() {
+    var twoSum = function(x) {
+      let resultArray = String(x).split('')
+      let after = ''
+      for(let i = x > 0 ? 0 : resultArray.length - 1; i > 0; i--) {
+        if (resultArray[i] > 0) {
+          after = after.concat(resultArray[i])
+        }
+      }
+      if (x < 0) {
+        after = '-' + after
+      }
+      return after
+    };
+    console.log(twoSum(1234))
   }
   render() {
     return (

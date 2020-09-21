@@ -1,19 +1,22 @@
+import Goods from "../../router/goods/list";
+import HooksTest from "../../router/hooks";
+
 export const menus = [
   {
     path: '/login',
     name: '首页'
   },
   {
-    name: '活动',
+    name: 'reduxDemo',
     children: [
       {
-        path: '/activity/time-coupon',
-        name: '限时券'
+        path: '/activity/H5',
+        name: '存储+计数'
       },
       {
-        path: '/activity/H5',
-        name: 'H5活动'
-      }
+        path: '/activity/time-coupon',
+        name: '取数据'
+      },
     ]
   },
   {
@@ -24,4 +27,16 @@ export const menus = [
     path: '/snow',
     name: '大雪花'
   },
+  {
+    path: '/goods',
+    name: '商品',
+  },
+  {
+    path: '/HooksTest',
+    name: '测试Hooks',
+  },
+  {
+    path: '/canvas',
+    name: 'canvas',
+  }
 ]
