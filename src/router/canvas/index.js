@@ -10,7 +10,7 @@ export default class HooksTest extends React.Component{
     return (
       <div>
         <h2>画布测试</h2>
-        <canvas id="canvas" style={{ width: 750, height: 750 }}></canvas>
+        <canvas id="canvas" style={{ width: 750, height: 750 }}/>
       </div>
     )
   }
@@ -24,7 +24,7 @@ export default class HooksTest extends React.Component{
 
     // 熊猫头
     ctx.beginPath()
-    ctx.arc(100, 100, 50,  0, Math.PI * 2)
+    ctx.arc(20, 20, 10,  0, Math.PI * 2)
     ctx.stroke()
 
   }

@@ -1,5 +1,5 @@
 {
-  "name": "antd-admin",
+  "name": "测试",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -12,6 +12,7 @@
     "babel-plugin-import": "^1.13.0",
     "customize-cra": "^0.9.1",
     "dotenv-cli": "^3.1.0",
+    "emoji-mart": "^3.0.0",
     "less": "^3.11.1",
     "less-loader": "^5.0.0",
     "prop-types": "^15.7.2",
