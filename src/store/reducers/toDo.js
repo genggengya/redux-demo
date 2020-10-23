@@ -1,4 +1,4 @@
-import { GET_TODO_LIST, ADD_TODO_LIST, DELETE_TODO_LIST } from '../action-type'
+import { GET_TODO_LIST, ADD_TODO_LIST, DELETE_TODO_LIST, UPDATE_TODO_LIST } from '../action-type'
 
 const initialState = {
   toDo: []
@@ -12,8 +12,20 @@ export default function toDo (state = initialState, action) {
       return addToDoList(state, action.data)
     case DELETE_TODO_LIST:
       return deleteToDoList(state, action.data)
+    case UPDATE_TODO_LIST:
+      return updateToDoList(state, action.data)
     default:
       return state
+  }
+}
+
+function updateToDoList(state, { name, types }) {
+  let newToDo = state.toDo
+  let index = newToDo.findIndex(item => item.name === name)
+  newToDo[index].type = types
+  return  {
+    ...state,
+    toDo: [...newToDo]
   }
 }
 

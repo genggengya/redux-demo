@@ -1,13 +1,13 @@
 import React from 'react'
 import { Button, Input, Modal, Form, Select } from 'antd'
 import { connect } from 'react-redux'
-import { getToDoList, addToDoList, deleteToDoList } from '@/store/actions/toDo'
+import { getToDoList, addToDoList, deleteToDoList, updateToDoList } from '@/store/actions/toDo'
 import TabsToDo from './Tabs'
 
 @connect((state) => ({
   list: state.toDo.toDo
 }), {
-  getToDoList, addToDoList, deleteToDoList
+  getToDoList, addToDoList, deleteToDoList, updateToDoList
 })
 
 class ToDoList extends React.Component{
@@ -28,11 +28,13 @@ class ToDoList extends React.Component{
     const tailLayout = {
       wrapperCol: { offset: 4, span: 16 },
     };
-    const { list, addToDoList, deleteToDoList } = this.props
+    const { list, deleteToDoList, updateToDoList } = this.props
     const { visible, tabKey } = this.state
+    console.log(list, 'list')
     return (
       <div>
         <TabsToDo
+          updateToDoList={updateToDoList}
           deleteToDoList={deleteToDoList}
           dataTabs={list}
           tabKey={tabKey}
@@ -82,7 +84,7 @@ class ToDoList extends React.Component{
     })
   };
 
-  handleCancel = e => {
+  handleCancel = () => {
     this.setState({
       visible: false,
     });
@@ -100,7 +102,7 @@ class ToDoList extends React.Component{
         [arg]: value
       })
     }
-
   }
 }
+
 export default ToDoList

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Tabs } from 'antd';
+import { Tabs, Menu, Dropdown, Button } from 'antd';
 import { DeleteOutlined } from '@ant-design/icons'
 import './index.scss'
 
@@ -9,7 +9,7 @@ export default class TabsToDo extends React.Component{
   render() {
     const { dataTabs = [], tabKey, onChange } = this.props
     return (
-      <Tabs activeKey={tabKey} onChange={onChange}>
+      <Tabs activeKey={tabKey} onChange={onChange} centered={true}>
         <TabPane tab="待做" key="1">
           { this.renderContent(dataTabs, tabKey) }
         </TabPane>
@@ -23,13 +23,40 @@ export default class TabsToDo extends React.Component{
     )
   }
   renderContent = (dataTabs, tabKey) => {
+    const { updateToDoList } = this.props
     return (
       Array.isArray(dataTabs) &&
       dataTabs.filter((item) => item.type === tabKey).map((item, index) => {
-        return (<p key={index} className={'tabs-item'}>
-          { item.name + index}
-          <DeleteOutlined style={{ color: 'red', cursor: 'pointer' }} onClick={ () => this.deleteItem(item) }/>
-        </p>)
+        return (<div key={index} className={'tabs-item'}>
+          { item.name }
+          <div>
+            <Dropdown overlay={
+              <Menu>
+                {
+                  +tabKey !== 1 &&
+                  <Menu.Item onClick={() => updateToDoList(item.name, '1')}>
+                    改为待做
+                  </Menu.Item>
+                }
+                {
+                  +tabKey !== 2 &&
+                  <Menu.Item onClick={() => updateToDoList(item.name, '2')}>
+                    改为正在做
+                  </Menu.Item>
+                }
+                {
+                  +tabKey !== 3 &&
+                  <Menu.Item onClick={() => updateToDoList(item.name, '3')}>
+                    改为已完成
+                  </Menu.Item>
+                }
+              </Menu>
+            } placement="bottomLeft">
+              <Button>编辑</Button>
+            </Dropdown>
+            <DeleteOutlined style={{ color: 'red', cursor: 'pointer' }} onClick={ () => this.deleteItem(item) }/>
+          </div>
+        </div>)
       })
     )
   }

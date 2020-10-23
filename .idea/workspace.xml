@@ -2,43 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f3772757-ad55-413c-9789-22033a805d44" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/router/canvas/page.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/router/canvas/time.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/router/canvas/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/router/canvas/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/router/hooks/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/router/hooks/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/router/hooks/view/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/router/hooks/view/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/router/toDoList/list/Tabs.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/router/toDoList/list/Tabs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/router/toDoList/list/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/router/toDoList/list/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/action-type.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/action-type.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/actions/toDo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/actions/toDo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/reducers/toDo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducers/toDo.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>sass</find>
-      <find>rules</find>
-      <find>img</find>
-      <find>ADDAGE</find>
-      <find>alias</find>
-      <find>babel</find>
-      <find>console</find>
-      <find>export const</find>
-      <find>renderChildrenMenu</find>
-      <find>antd</find>
-      <find>openKeys</find>
-      <find>addAgeCreater</find>
-      <find>react-color</find>
-      <find>lineColor</find>
-      <find>esl</find>
-      <find>ESLintPlugin</find>
-      <find>onChange</find>
-      <find>formRef</find>
-    </findStrings>
-    <replaceStrings>
-      <replace>Zmage</replace>
-      <replace>ADD_AGE</replace>
-      <replace>function</replace>
-    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -52,7 +31,7 @@
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/router/canvas" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -147,7 +126,11 @@
       <workItem from="1602645340523" duration="88000" />
       <workItem from="1603246534959" duration="1355000" />
       <workItem from="1603251527553" duration="20000" />
-      <workItem from="1603271354845" duration="182000" />
+      <workItem from="1603271354845" duration="3464000" />
+      <workItem from="1603330529139" duration="170000" />
+      <workItem from="1603345966646" duration="5913000" />
+      <workItem from="1603353490532" duration="3791000" />
+      <workItem from="1603421067901" duration="16298000" />
     </task>
     <servers />
   </component>
@@ -155,29 +138,37 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1602313518779">
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1603437222881">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1602313518779" />
-    <state width="1899" height="364" key="GridCell.Tab.0.bottom" timestamp="1603271461347">
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1603437222881" />
+    <state width="1899" height="249" key="GridCell.Tab.0.bottom" timestamp="1603421180970">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="364" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1603271461347" />
-    <state width="1899" height="364" key="GridCell.Tab.0.center" timestamp="1603271461347">
+    <state width="1899" height="249" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1603421180970" />
+    <state width="1899" height="249" key="GridCell.Tab.0.center" timestamp="1603421180970">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="364" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1603271461347" />
-    <state width="1899" height="364" key="GridCell.Tab.0.left" timestamp="1603271461347">
+    <state width="1899" height="249" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1603421180970" />
+    <state width="1899" height="249" key="GridCell.Tab.0.left" timestamp="1603421180970">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="364" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1603271461347" />
-    <state width="1899" height="364" key="GridCell.Tab.0.right" timestamp="1603271461347">
+    <state width="1899" height="249" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1603421180970" />
+    <state width="1899" height="249" key="GridCell.Tab.0.right" timestamp="1603421180970">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="364" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1603271461347" />
-    <state x="461" y="164" key="SettingsEditor" timestamp="1603251543281">
+    <state width="1899" height="249" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1603421180970" />
+    <state x="461" y="164" key="SettingsEditor" timestamp="1603272503113">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="461" y="164" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1603251543281" />
+    <state x="461" y="164" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1603272503113" />
+    <state x="663" y="236" width="594" height="568" key="find.popup" timestamp="1603348727844">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="663" y="236" width="594" height="568" key="find.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1603348727844" />
+    <state x="616" y="173" width="672" height="676" key="search.everywhere.popup" timestamp="1603431848454">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="616" y="173" width="672" height="676" key="search.everywhere.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1603431848454" />
   </component>
 </project>
