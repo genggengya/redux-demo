@@ -1,0 +1,43 @@
+.description{
+  display: flex;
+  justify-content: space-around;
+  .left-strip{
+    display: inline-block;
+    background-color: #00FFFF;
+    width: 10px;
+    height: 40px;
+    margin-right: 10px;
+  }
+  .content{
+    display: inline-block;
+    p{
+      margin: 0;
+    }
+    &-title{
+      font-size: 16px;
+      color: white;
+    }
+    &-value{
+      font-size: 20px;
+      color: white;
+    }
+    .add-icon{
+      display: inline-block;
+      width: 0;
+      height: 0;
+      border: 14px solid transparent;
+      margin-top: -14px;
+      margin-left: 10px;
+      border-bottom-color: red ;
+    }
+    .minus-icon{
+      display: inline-block;
+      width: 0;
+      height: 0;
+      border: 14px solid transparent;
+      margin-bottom: -14px;
+      margin-left: 10px;
+      border-top-color: green ;
+    }
+  }
+}
