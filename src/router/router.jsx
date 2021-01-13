@@ -7,8 +7,14 @@ import Goods from './goods/list'
 import GoodsAdd from './goods/add'
 import HooksTest from './hooks'
 import Canvas from './canvas'
+import MockTest from './mock'
 
 export const router = [
+  {
+    path: '/mock',
+    name: 'mock',
+    component: MockTest
+  },
   {
     path: '/login',
     name: '登录',

@@ -61,7 +61,8 @@ class Login extends React.Component{
             backgroundStyle: {
                 color: 'transparent'
             },
-            color: ['#00BBFF']
+            color: ['#00BBFF'],
+            barWidth: 16,
         }]
     };
     let optionTwo = {
@@ -221,6 +222,43 @@ class Login extends React.Component{
                 maxWidth: 550
               }}
               id={'one'}
+              option={{...optionPie}}
+            />
+          </Col>
+          <Col span={7} style={{ marginLeft: 10, height: 610 }} >
+            <Description
+              style={{
+                backgroundColor: backColor,
+                height: 60
+              }}
+              leftTitle={'本年度销售总额'}
+              leftNum={'2299.65'}
+              leftUnit='万元'
+              rightTitle='销售总额同比增长'
+              rightNum='14.45'
+              rightUnit='%'
+              type='add'
+            />
+            <Description
+              style={{
+                backgroundColor: backColor,
+                height: 60
+              }}
+              leftTitle={'本年度销售总额'}
+              leftNum={'2299.65'}
+              leftUnit='万元'
+              rightTitle='销售总额同比增长'
+              rightNum='14.45'
+              rightUnit='%'
+              type='minus'
+            />
+            <Echarts
+              style={{
+                backgroundColor: backColor,
+                height: 490,
+                maxWidth: 550
+              }}
+              id={'seven'}
               option={{...optionPie}}
             />
           </Col>

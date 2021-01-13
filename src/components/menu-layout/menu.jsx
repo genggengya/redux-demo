@@ -38,5 +38,9 @@ export const menus = [
   {
     path: '/canvas',
     name: 'canvas',
+  },
+  {
+    path: '/mock',
+    name: 'mock',
   }
 ]
