@@ -13,11 +13,57 @@ import TabsToDo from './Tabs'
 class ToDoList extends React.Component{
   // 类组件只能通过ref访问创建的Form，并使用Form内置方法
   formRef = React.createRef();
-
+  timer = null
   state = {
     visible: false,
     tabKey: '1'
   }
+
+  componentDidMount () {
+    function NestedIterator (params) {
+      let result = []
+      params.map(item => {
+        if (Array.isArray(item)) {
+          result.push(...NestedIterator(item))
+        } else {
+          result.push(item)
+        }
+      })
+      return result
+    }
+    console.log(NestedIterator([[1,1],2,[1,1]]))
+
+    window.onresize = this.throttle(() => console.log(1), 1000)
+    function add (num) {
+      let sum = num;
+      let fn = function (v) {
+          sum += v;
+          return fn
+      };
+      fn.toString = function () {
+          return sum
+      };
+      return fn
+  }
+  console.log(add(1)(2)(3)(4))
+  }
+
+  throttle(fn,delay){
+    let valid = true
+    return function() {
+       if(!valid){
+           //休息时间 暂不接客
+           return false 
+       }
+       // 工作时间，执行函数并且在间隔期内把状态位设为无效
+        valid = false
+        setTimeout(() => {
+            fn()
+            valid = true;
+        }, delay)
+    }
+  }
+
 
   render() {
     const { Option } = Select;
@@ -50,7 +96,7 @@ class ToDoList extends React.Component{
         >
           <Form {...layout} ref={this.formRef} name="control-ref" onFinish={this.handleOk}>
             <Form.Item name="name" label="name" rules={[{ required: true, message: '请填写名称' }]}>
-              <Input />
+              <Input onChange={ (e) => { this.testDebounce(e.target.value) } } />
             </Form.Item>
             <Form.Item name="type" label="type" rules={[{ required: true, message: '请填写类型'  }]}>
               <Select
@@ -74,6 +120,42 @@ class ToDoList extends React.Component{
       </div>
     )
   }
+
+  // 节流
+  testDebounce = (value, num = 1000) => {
+    // return function(_this) {
+    //   if (_this.timer) {
+    //     return
+    //   }
+    //   _this.timer = true
+    //   setTimeout(() => {
+    //     _this.timer = false
+    //     console.log(value, '--')
+    //   }, num)
+    // }(this)
+    this.setState({ null: null })
+  }
+
+  // 防抖
+  testDelay = (value, num = 3000) => {
+    return function(_this) {
+      if (_this.timer) {
+        clearTimeout(_this.timer)
+      }
+      _this.timer = setTimeout(() => {
+        console.log(value, '--')
+      }, num)
+    }(this)
+  }
+
+  makeFunc = () => {
+    let name = "Mozilla";
+    function displayName() {
+        alert(name);
+    }
+    return displayName;
+}
+
   onReset = () => {
     this.formRef.current.resetFields();
   }

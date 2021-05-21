@@ -120,7 +120,7 @@ class MenuLayout extends React.Component {
             }
           </Menu>
         </Sider>
-        <Layout className="site-layout" style={{overflowY: 'scroll'}}>
+        <Layout className="site-layout" style={{display: 'flex'}}>
           <Header className="site-layout-background" style={{ padding: 0, backgroundColor: '#FFF', textAlign: 'left' }} >
             {/*<Button type="link" ghost onClick={this.colorSelectModal} style={{ marginBottom: 16 }}>*/}
             {/*  {*/}
@@ -133,7 +133,8 @@ class MenuLayout extends React.Component {
           <Content
             style={{
               padding: 24,
-              height: 'auto',
+              flex: 1,
+              overflow: 'auto'
             }}
           >
             <Breadcrumb style={{ margin: '16px 0', textAlign: 'left' }}>
@@ -145,7 +146,7 @@ class MenuLayout extends React.Component {
             </Breadcrumb>
             <div
               className="site-layout-background"
-              style={{ padding: 24, backgroundColor: '#FFF', height: 'auto', minHeight: '100%' }}
+              style={{ padding: 24, backgroundColor: '#FFF', height: 'auto', minHeight: '100%',  }}
             >
               { this.props.children }
             </div>

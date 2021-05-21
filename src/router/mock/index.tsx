@@ -1,6 +1,6 @@
 import React from 'react'
 import { Table, Image, Button, Space, Tooltip, Modal, message } from 'antd'
-
+import qs from 'qs'
 import Api from './date/data'
 
 type MyState = {
@@ -16,11 +16,18 @@ export default class MockTest extends React.Component<any, MyState> {
   }
 
   async componentDidMount  () {
-    await Api.getList().then(res => {
+    let data = [
+      {
+        id: 1
+      }
+    ]
+    await Api.getList(qs.stringify(data, { arrayFormat: 'indices' })).then(res => {
       this.setState({
         data: res
       })
     })
+    
+    console.log(qs.stringify(data, { arrayFormat: 'indices' }))
   }
 
   putById = (data?: any) => {

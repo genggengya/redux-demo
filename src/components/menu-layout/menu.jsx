@@ -42,5 +42,9 @@ export const menus = [
   {
     path: '/mock',
     name: 'mock',
+  },
+  {
+    path: '/TsTest',
+    name: 'TsTest',
   }
 ]

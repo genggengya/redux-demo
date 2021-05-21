@@ -1,20 +1,19 @@
 import React from 'react'
 
 import 'emoji-mart/css/emoji-mart.css'
-import { Picker } from 'emoji-mart'
 import Example from './view/index'
+import TestUseEffect from './view/userEffect'
 
 export default class HooksTest extends React.Component{
+  componentDidMount () {
+  }
 
   render() {
     return (
       <div>
-        {/*<Picker onSelect={this.addEmoji} />*/}
         <Example/>
+        <TestUseEffect />
       </div>
     )
-  }
-  addEmoji = () => {
-
   }
 }

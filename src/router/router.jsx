@@ -8,8 +8,14 @@ import GoodsAdd from './goods/add'
 import HooksTest from './hooks'
 import Canvas from './canvas'
 import MockTest from './mock'
+import TsTest from './ts-test'
 
 export const router = [
+  {
+    path: '/TsTest',
+    name: 'TsTest',
+    component: TsTest
+  },
   {
     path: '/mock',
     name: 'mock',
